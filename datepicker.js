@@ -67,7 +67,7 @@ class DatePicker extends Component {
         {
           toValue: height,
           duration: duration,
-          useNativeDriver: true
+          useNativeDriver: false
         }
       ).start();
     } else {
@@ -76,7 +76,7 @@ class DatePicker extends Component {
         {
           toValue: 0,
           duration: duration,
-          useNativeDriver: true
+          useNativeDriver: false
         }
       ).start(() => {
         this.setState({modalVisible: visible});
